@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_MD</Define>
               <Undefine></Undefine>
-              <IncludePath>..\User;..\STM32F10x_Fw_lib\inc;..\Startup;..\CMSIS;..\Drivers\inc</IncludePath>
+              <IncludePath>..\User;..\STM32F10x_Fw_lib\inc;..\Startup;..\CMSIS;..\Drivers\inc;..\Middle\inc</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -396,6 +396,16 @@
               <FileName>system_stm32f10x.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\system_stm32f10x.c</FilePath>
+            </File>
+            <File>
+              <FileName>common.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\common.h</FilePath>
+            </File>
+            <File>
+              <FileName>common.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\common.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -561,6 +571,46 @@
               <FileName>tim.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Drivers\src\tim.c</FilePath>
+            </File>
+            <File>
+              <FileName>adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\src\adc.c</FilePath>
+            </File>
+            <File>
+              <FileName>moto_6020.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\src\moto_6020.c</FilePath>
+            </File>
+            <File>
+              <FileName>lightbar.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\src\lightbar.c</FilePath>
+            </File>
+            <File>
+              <FileName>armour.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Drivers\src\armour.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Middle</GroupName>
+          <Files>
+            <File>
+              <FileName>LightBar_logic.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middle\src\LightBar_logic.c</FilePath>
+            </File>
+            <File>
+              <FileName>communicate_master.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middle\src\communicate_master.c</FilePath>
+            </File>
+            <File>
+              <FileName>communicate_slave.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Middle\src\communicate_slave.c</FilePath>
             </File>
           </Files>
         </Group>
